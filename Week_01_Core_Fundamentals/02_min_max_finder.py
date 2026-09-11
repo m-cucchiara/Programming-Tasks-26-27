@@ -18,6 +18,23 @@ def main():
     # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
     pass
 
+def find_min_max(values):
+    min_value = number[0]
+    max_value = 0
+    for number in values:
+        if number <= min_value:
+            min_value = number
+        elif number > max_value:
+            max_value = number
 
+    return min_value, max_value
+
+
+
+
+listOfNumbers = input("Enter a list of numbers seperated by commas: ")
+listOfNumbers = listOfNumbers.split(",")
+
+find_min_max(listOfNumbers)
 if __name__ == "__main__":
     main()

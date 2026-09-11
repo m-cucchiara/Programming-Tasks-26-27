@@ -5,3 +5,5 @@ Write a Python program that:
 - Calculates the mean *without using built-in statistics libraries*.
 - Includes input validation.
 - Implements a reusable function: `calculate_average(values)`.
+
+
