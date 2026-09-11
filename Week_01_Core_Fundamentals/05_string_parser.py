@@ -5,7 +5,7 @@ TASK: 05 String Parser
 Write a parser that:
 - Accepts a sentence from the user.
 - Splits it into words manually (not using split()).
-- Outputs number of words + list of words.
+- Outputs number of words + lshe ist of words.
 
 TODO:
 - Fill in functions
@@ -18,6 +18,5 @@ def main():
     # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
     pass
 
-
 if __name__ == "__main__":
-    main()
+    print(main())
