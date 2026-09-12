@@ -15,6 +15,8 @@ TODO:
 numberList = []
 
 def main():
+    amount = int(input("Enter how many numbers you want to enter: "))
+    
     for i in range(0, amount):
         number = int(input("Enter a number: "))
         numberList.append(number)
@@ -29,7 +31,7 @@ def calculate_average(values):
 
 
 
-amount = int(input("Enter how many numbers you want to enter: "))
+
 
 if __name__ == "__main__":
     main()

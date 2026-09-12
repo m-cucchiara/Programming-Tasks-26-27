@@ -25,8 +25,10 @@ def main():
     print("The maximum value is: ", max[1])
 
 def find_min_max(values):
+
     min_value = values[0]
     max_value = 0
+    
     for number in values:
         if int(number) <= int(min_value):
             min_value = int(number)
