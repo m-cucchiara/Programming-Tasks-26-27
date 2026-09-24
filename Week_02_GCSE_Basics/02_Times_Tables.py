@@ -15,7 +15,16 @@ def main():
     # TODO: Write demonstration/testing code
     # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
     # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
-    pass
+    num = int(input("Enter a number: "))
+
+    ans = times_table(num)
+
+    print(ans)
+
+def times_table(num):
+    for i in range(1,13):
+        answer = i * num
+        print(f"",num, " x ", i, " = ", answer)
 
 
 if __name__ == "__main__":
