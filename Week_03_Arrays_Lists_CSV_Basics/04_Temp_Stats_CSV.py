@@ -20,7 +20,51 @@ def main():
     # TODO: Write demonstration/testing code
     # If you want to delete all the code here and work just with a blank file go ahead, remember anything under the if __name__=="__main__":
     # will only run if this module is being run directly. So used this subprocedure to carry out testing if it is going to be an imported file.
-    pass
+    file = open("meantemp_daily_totals.txt", "r")
+    low, high, mean = average_min_max_calc(file)
+
+    print("Lowest temperature: ", low)
+    print("Highest temperature: ", high)
+    print("Mean temperature: ", mean)
+
+    file.close()
+
+def average_min_max_calc(file):
+
+    highestTemp = 0
+    lowestTemp = 0
+    total = 0
+    count = 0
+
+    for line in file:
+        line = line.strip()
+        line = line.strip(" ")
+        line = line.split(" ")
+
+        try:
+            temp = float(line[-1:][0])
+            total += temp
+            count += 1
+
+            if temp < lowestTemp:
+                lowestTemp = temp
+
+            if temp > highestTemp:
+                highestTemp = temp
+
+
+        except:
+            pass
+
+    meanTemp = total/count
+
+    return lowestTemp, highestTemp, meanTemp
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
