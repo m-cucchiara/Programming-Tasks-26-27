@@ -32,9 +32,3 @@ def main():
 
 
     return i, list
-
-if __name__ == "__main__":
-    string = main()
-
-print("List of words: ", string[1])
-print("Number of words is ", string[0])
